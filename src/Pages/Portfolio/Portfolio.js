@@ -17,6 +17,7 @@ import phaserLogo from "../../Images/Phaser 2D No Glow.png";
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
+    height: 545,
   },
 });
 
@@ -173,48 +174,50 @@ export default function Portfolio() {
         </CardActions>
       </Card>
       {/* //** Start of Escape Project */}
-      <Card className={classes.root}>
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            alt="Tweeter Application"
-            height="200"
-            src={escapeImage}
-            title="Tweeter Application"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              Escape!
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              In the game, the user is given randomly generated directional
-              cards to navigate through a spaceship. As the user navigates, they
-              are attacked by enemies. The goal is to defeat the boss and make
-              it to the escape pod.
-            </Typography>
-            <hr />
+      <div className="row-two">
+        <Card className={classes.root}>
+          <CardActionArea>
+            <CardMedia
+              component="img"
+              alt="Tweeter Application"
+              height="200"
+              src={escapeImage}
+              title="Tweeter Application"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                Escape!
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                In the game, the user is given randomly generated directional
+                cards to navigate through a spaceship. As the user navigates,
+                they are attacked by enemies. The goal is to defeat the boss and
+                make it to the escape pod.
+              </Typography>
+              <hr />
 
-            <Typography variant="body2" color="textSecondary">
-              <i className="fab fa-js fa-3x"></i>
-              <i class="fab fa-html5 fa-3x"></i>
-              <i class="fab fa-css3-alt fa-3x"></i>
-              <span
-                class="iconify-inline"
-                data-icon="akar-icons:jquery-fill"
-                data-width="40"
-              ></span>
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Git
-          </Button>
-          <Button size="small" color="primary">
-            Try
-          </Button>
-        </CardActions>
-      </Card>
+              <Typography variant="body2" color="textSecondary">
+                <i className="fab fa-js fa-3x"></i>
+                <i class="fab fa-html5 fa-3x"></i>
+                <i class="fab fa-css3-alt fa-3x"></i>
+                <span
+                  class="iconify-inline"
+                  data-icon="akar-icons:jquery-fill"
+                  data-width="40"
+                ></span>
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size="small" color="primary">
+              Git
+            </Button>
+            <Button size="small" color="primary">
+              Try
+            </Button>
+          </CardActions>
+        </Card>
+      </div>
     </div>
   );
 }

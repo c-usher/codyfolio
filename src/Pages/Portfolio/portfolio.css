@@ -1,6 +1,12 @@
 .cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.row-two {
+  padding-top: 3rem;
 }
 
 .phaser-logo {

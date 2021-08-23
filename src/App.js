@@ -4,10 +4,10 @@ import Navigation from "./Components/Navigation/Navigation";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header"></header>
+      <div className="app-main">
         <Navigation />
-      </header>
-      <div className="app-main"></div>
+      </div>
     </div>
   );
 }

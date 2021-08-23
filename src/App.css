@@ -1,5 +1,10 @@
 html {
   background-color: #b9b7bd;
-  background-image: -webkit-linear-gradient(121deg, #eeede7 50%, #b9b7bd 50%);
-  height: 100%;
+  background: linear-gradient(to right bottom, #eeede7 50%, #b9b7bd 50%);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100%;
 }
