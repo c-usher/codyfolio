@@ -1,1 +1,9 @@
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
 
+.phaser-logo {
+  width: 5rem;
+  padding: 1rem;
+}
