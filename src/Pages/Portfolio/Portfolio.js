@@ -10,6 +10,8 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import inspectImage from "../../Images/inspect-image.jpg";
 import soulImage from "../../Images/souls-adventure.png";
+import tweeterImage from "../../Images/tweeter.png";
+import escapeImage from "../../Images/escape-game.png";
 import phaserLogo from "../../Images/Phaser 2D No Glow.png";
 
 const useStyles = makeStyles({
@@ -85,10 +87,10 @@ export default function Portfolio() {
         <CardActionArea>
           <CardMedia
             component="img"
-            alt="Inspection Application"
+            alt="Souls Application"
             height="200"
             src={soulImage}
-            title="Inspection Application"
+            title="Souls Application"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
@@ -104,6 +106,7 @@ export default function Portfolio() {
 
             <Typography variant="body2" color="textSecondary">
               <i className="fab fa-js fa-3x"></i>
+              <i class="fab fa-html5 fa-3x"></i>
               <img src={phaserLogo} className="phaser-logo" />
               <span
                 class="iconify-inline"
@@ -118,7 +121,7 @@ export default function Portfolio() {
             Git
           </Button>
           <Button size="small" color="primary">
-            Play
+            Try
           </Button>
         </CardActions>
       </Card>
@@ -127,45 +130,34 @@ export default function Portfolio() {
         <CardActionArea>
           <CardMedia
             component="img"
-            alt="Inspection Application"
+            alt="Tweeter Application"
             height="200"
-            src={inspectImage}
-            title="Inspection Application"
+            src={tweeterImage}
+            title="Tweeter Application"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Property Inspection Application
+              Tweeter Application
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              A fullstack Mern application made to organize and keep track of
-              status of inspections, notes, and preferences for each unit. This
-              app has user creation, verification, and validation. The user can
-              also send a forgot password email and reset your new password with
-              OTP.
+              A fun, more colorful take on twitter. On this project I used Ruby
+              on Rails to build out the back end, JavaScript, and HTML for the
+              front-end, and Tailwind CSS for the styling.
             </Typography>
             <hr />
 
             <Typography variant="body2" color="textSecondary">
               <i className="fab fa-js fa-3x"></i>
-              <i className="fab fa-react fa-3x"></i>
+              <i class="fab fa-html5 fa-3x"></i>
+              <i class="fab fa-css3-alt fa-3x"></i>
               <span
-                className="iconify-inline"
-                data-icon="akar-icons:redux-fill"
+                class="iconify-inline"
+                data-icon="codicon:ruby"
                 data-width="40"
               ></span>
               <span
-                className="iconify-inline"
-                data-icon="cib:redis"
-                data-width="40"
-              ></span>
-              <span
-                className="iconify-inline"
-                data-icon="cib:mongodb"
-                data-width="40"
-              ></span>
-              <span
-                className="iconify-inline"
-                data-icon="logos:express"
+                class="iconify-inline"
+                data-icon="cib:heroku"
                 data-width="40"
               ></span>
             </Typography>
@@ -173,10 +165,53 @@ export default function Portfolio() {
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
-            Front End Git
+            Git
           </Button>
           <Button size="small" color="primary">
-            Back End Git
+            Try
+          </Button>
+        </CardActions>
+      </Card>
+      {/* //** Start of Escape Project */}
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            component="img"
+            alt="Tweeter Application"
+            height="200"
+            src={escapeImage}
+            title="Tweeter Application"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Escape!
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              In the game, the user is given randomly generated directional
+              cards to navigate through a spaceship. As the user navigates, they
+              are attacked by enemies. The goal is to defeat the boss and make
+              it to the escape pod.
+            </Typography>
+            <hr />
+
+            <Typography variant="body2" color="textSecondary">
+              <i className="fab fa-js fa-3x"></i>
+              <i class="fab fa-html5 fa-3x"></i>
+              <i class="fab fa-css3-alt fa-3x"></i>
+              <span
+                class="iconify-inline"
+                data-icon="akar-icons:jquery-fill"
+                data-width="40"
+              ></span>
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" color="primary">
+            Git
+          </Button>
+          <Button size="small" color="primary">
+            Try
           </Button>
         </CardActions>
       </Card>
