@@ -27,7 +27,7 @@ export default function Portfolio() {
     <div className="cards">
       {/* //** Start of Inspection Tracker Card */}
       <Card className={classes.root}>
-        <CardActionArea>
+        <CardActionArea href="https://github.com/c-usher/inspUserAPI">
           <CardMedia
             component="img"
             alt="Inspection Application"
@@ -75,17 +75,25 @@ export default function Portfolio() {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
+          <Button
+            size="small"
+            href="https://github.com/c-usher/InspFrontEnd"
+            color="primary"
+          >
             Front End Git
           </Button>
-          <Button size="small" color="primary">
+          <Button
+            size="small"
+            href="https://github.com/c-usher/inspUserAPI"
+            color="primary"
+          >
             Back End Git
           </Button>
         </CardActions>
       </Card>
       {/* //** Start of Souls Adventure*/}
       <Card className={classes.root}>
-        <CardActionArea>
+        <CardActionArea href="https://github.com/c-usher/entslash">
           <CardMedia
             component="img"
             alt="Souls Application"
@@ -108,7 +116,7 @@ export default function Portfolio() {
             <Typography variant="body2" color="textSecondary">
               <i className="fab fa-js fa-3x"></i>
               <i class="fab fa-html5 fa-3x"></i>
-              <img src={phaserLogo} className="phaser-logo" />
+              <img src={phaserLogo} alt="Phaser Logo" className="phaser-logo" />
               <span
                 class="iconify-inline"
                 data-icon="cib:heroku"
@@ -118,17 +126,25 @@ export default function Portfolio() {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
+          <Button
+            size="small"
+            href="https://github.com/c-usher/entslash"
+            color="primary"
+          >
             Git
           </Button>
-          <Button size="small" color="primary">
+          <Button
+            size="small"
+            href="https://souls-first.herokuapp.com/"
+            color="primary"
+          >
             Try
           </Button>
         </CardActions>
       </Card>
       {/* //** Start of Tweeter Group Project */}
       <Card className={classes.root}>
-        <CardActionArea>
+        <CardActionArea href="https://github.com/c-usher/tweet-full-stack">
           <CardMedia
             component="img"
             alt="Tweeter Application"
@@ -165,10 +181,18 @@ export default function Portfolio() {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
+          <Button
+            size="small"
+            href="https://github.com/c-usher/tweet-full-stack"
+            color="primary"
+          >
             Git
           </Button>
-          <Button size="small" color="primary">
+          <Button
+            size="small"
+            href="https://tweeter-front.herokuapp.com/"
+            color="primary"
+          >
             Try
           </Button>
         </CardActions>
@@ -176,7 +200,7 @@ export default function Portfolio() {
       {/* //** Start of Escape Project */}
       <div className="row-two">
         <Card className={classes.root}>
-          <CardActionArea>
+          <CardActionArea href="https://github.com/c-usher/Escape-Game">
             <CardMedia
               component="img"
               alt="Tweeter Application"
@@ -209,10 +233,18 @@ export default function Portfolio() {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size="small" color="primary">
+            <Button
+              size="small"
+              href="https://github.com/c-usher/Escape-Game"
+              color="primary"
+            >
               Git
             </Button>
-            <Button size="small" color="primary">
+            <Button
+              size="small"
+              href="https://c-usher.github.io/EscapeGameV2/"
+              color="primary"
+            >
               Try
             </Button>
           </CardActions>
