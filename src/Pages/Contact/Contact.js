@@ -1,35 +1,56 @@
-import { Grid } from "@material-ui/core";
-import React from "react";
+import { Grid, Link } from "@material-ui/core";
+import React, { useEffect, useState } from "react";
 import "./contact.css";
 
 export default function Contact() {
+  const [clicked, setClicked] = useState(false);
+  useEffect(() => {}, [clicked]);
+  const onClick = (e) => {
+    setClicked(true);
+    navigator.clipboard.writeText("usher.cody@outlook.com");
+  };
+
   return (
     <div className="contact-page">
       <div className="App">
-        <Grid container spacing={3} justify="center">
-          <Grid item xs={6} lg={12} className="name">
-            <h1>Cody Usher</h1>
+        <h1 className="name">Cody Usher</h1>
+
+        <Grid
+          container
+          justifyContent="space-evenly"
+          alignItems="center"
+          style={{ minHeight: "100vh" }}
+        >
+          <Grid item className="icons" onClick={onClick}>
+            <Link color="inherit" className="links">
+              <i className="fas fa-envelope fa-5x"></i>
+            </Link>
+            {clicked && (
+              <div className="copied">
+                Usher.Cody@outlook.com has been Copied
+              </div>
+            )}
           </Grid>
-          <Grid item xs={4}>
-            <i className="fas fa-envelope fa-6x"></i>
+          <Grid item className="icons">
+            <Link
+              href="https://www.linkedin.com/in/codyusher/"
+              color="inherit"
+              className="links"
+            >
+              <i className="fab fa-linkedin-in fa-5x"></i>
+            </Link>
           </Grid>
-          <Grid item xs={4}>
-            <i className="fab fa-linkedin-in fa-6x"></i>
-          </Grid>
-          <Grid item xs={4}>
-            <i className="fab fa-github fa-6x"></i>{" "}
+          <Grid item className="icons">
+            <Link
+              href="https://github.com/c-usher"
+              color="inherit"
+              className="links"
+            >
+              <i className="fab fa-github fa-5x"></i>
+            </Link>
           </Grid>
         </Grid>
       </div>
     </div>
-
-    // <div>
-    //   <h1 className="name">Cody Usher</h1>
-    //   <div className="icons">
-    //     <i class="fas fa-envelope fa-7x"></i>
-    //     <i class="fab fa-linkedin-in fa-7x"></i>
-    //     <i class="fab fa-github fa-7x"></i>
-    //   </div>
-    // </div>
   );
 }

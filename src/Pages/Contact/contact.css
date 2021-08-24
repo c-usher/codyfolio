@@ -1,0 +1,31 @@
+.name {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  font-size: 3.5rem;
+  color: #868b8e;
+}
+
+.icons {
+  color: #868b8e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: #eeede7;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.icons:hover {
+  background-color: #868b8e;
+  color: #e7d2cc;
+}
+
+.copied {
+  position: absolute;
+  padding-bottom: 14rem;
+  text-align: center;
+  color: #868b8e;
+}
