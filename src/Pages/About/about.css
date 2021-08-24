@@ -1,1 +1,10 @@
+.name {
+  display: flex;
+  justify-content: center;
+  font-size: 3.5rem;
+  color: #868b8e;
+}
 
+.about {
+  color: gray;
+}
